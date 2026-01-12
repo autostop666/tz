@@ -1,0 +1,25 @@
+{
+  "users": [
+    { "id": 1, "name": "Иван", "lastname": "Иванов", "email": "ivan.ivanov@example.com", "skills": ["JavaScript", "React"], "createdAt": "2025-01-01T10:00:00Z" },
+    { "id": 2, "name": "Анна", "lastname": "Петрова", "email": "anna.petrova@example.com", "skills": ["Python"], "createdAt": "2025-01-02T10:00:00Z" },
+    { "id": 3, "name": "Сергей", "lastname": "Смирнов", "email": "sergey.smirnov@example.com", "skills": [], "createdAt": "2025-01-03T10:00:00Z" },
+    { "id": 4, "name": "Ольга", "lastname": "Кузнецова", "email": "olga.kuznetsova@example.com", "skills": ["HTML", "CSS"], "createdAt": "2025-01-04T10:00:00Z" },
+    { "id": 5, "name": "Дмитрий", "lastname": "Соколов", "email": "dmitry.sokolov@example.com", "skills": ["Node.js"], "createdAt": "2025-01-05T10:00:00Z" },
+    { "id": 6, "name": "Мария", "lastname": "Морозова", "email": "maria.morozova@example.com", "skills": ["Figma"], "createdAt": "2025-01-06T10:00:00Z" },
+    { "id": 7, "name": "Алексей", "lastname": "Волков", "email": "alexey.volkov@example.com", "skills": ["Java"], "createdAt": "2025-01-07T10:00:00Z" },
+    { "id": 8, "name": "Екатерина", "lastname": "Алексеева", "email": "ekaterina.alexeeva@example.com", "skills": [], "createdAt": "2025-01-08T10:00:00Z" },
+    { "id": 9, "name": "Максим", "lastname": "Лебедев", "email": "maxim.lebedev@example.com", "skills": ["SQL"], "createdAt": "2025-01-09T10:00:00Z" },
+    { "id": 10, "name": "Наталья", "lastname": "Семёнова", "email": "natalia.semenova@example.com", "skills": ["Project Management"], "createdAt": "2025-01-10T10:00:00Z" },
+
+    { "id": 11, "name": "Андрей", "lastname": "Егоров", "email": "andrey.egorov@example.com", "skills": ["DevOps"], "createdAt": "2025-01-11T10:00:00Z" },
+    { "id": 12, "name": "Юлия", "lastname": "Павлова", "email": "yulia.pavlova@example.com", "skills": [], "createdAt": "2025-01-12T10:00:00Z" },
+    { "id": 13, "name": "Виктор", "lastname": "Козлов", "email": "victor.kozlov@example.com", "skills": ["C#"], "createdAt": "2025-01-13T10:00:00Z" },
+    { "id": 14, "name": "Алина", "lastname": "Никитина", "email": "alina.nikitina@example.com", "skills": ["UX"], "createdAt": "2025-01-14T10:00:00Z" },
+    { "id": 15, "name": "Роман", "lastname": "Орлов", "email": "roman.orlov@example.com", "skills": ["Go"], "createdAt": "2025-01-15T10:00:00Z" },
+    { "id": 16, "name": "Татьяна", "lastname": "Макарова", "email": "tatiana.makarova@example.com", "skills": [], "createdAt": "2025-01-16T10:00:00Z" },
+    { "id": 17, "name": "Павел", "lastname": "Захаров", "email": "pavel.zakharov@example.com", "skills": ["Kotlin"], "createdAt": "2025-01-17T10:00:00Z" },
+    { "id": 18, "name": "Вероника", "lastname": "Беляева", "email": "veronika.belyaeva@example.com", "skills": ["Marketing"], "createdAt": "2025-01-18T10:00:00Z" },
+    { "id": 19, "name": "Илья", "lastname": "Громов", "email": "ilya.gromov@example.com", "skills": ["Rust"], "createdAt": "2025-01-19T10:00:00Z" },
+    { "id": 20, "name": "Светлана", "lastname": "Фёдорова", "email": "svetlana.fedorova@example.com", "skills": [], "createdAt": "2025-01-20T10:00:00Z" }
+  ]
+}
