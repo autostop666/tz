@@ -6,11 +6,13 @@ import { UserListPage } from './pages/UserListPage'
 function App() {
 return(
   <BrowserRouter>
+    <div className="conteiner">
     <Routes>
       <Route path="/" element={<UserListPage/>}/>
       <Route path="/users/:id" element={<UserPage/>}/>
       <Route path="/users/new" element={<UserPage/>}/>
     </Routes>
+    </div>
   </BrowserRouter>
 )
 
