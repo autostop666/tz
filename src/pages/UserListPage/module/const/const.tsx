@@ -1,32 +1,34 @@
-export const Columns = [
-    {
-        title: "id",
-        datainder : "id",
-        key: "id",
-        sorter: (a: number, b: number) => a - b,
-    },
-    {
-        title: "name",
-        datainder : "name",
-        key: "name",
-        sorter: (a: number, b: number) => a - b,
-    },
-   {
-        title: "lastname",
-        datainder : "lastname",
-        key: "lastname",
-        sorter: (a: number, b: number) => a - b,
-    },
-    {
-        title: "email",
-        datainder : "email",
-        key: "email",
-        sorter: (a: number, b: number) => a - b,
-    },
- {
-        title: "createdAt",
-        datainder : "createdAt",
-        key: "createdAt",
-        sorter: (a: number, b: number) => a - b,
-    },
+import { ColumnsType } from "antd/es/table";
+
+export const Columns: ColumnsType = [
+  {
+    title: "id",
+    dataIndex: "id",
+    key: "id",
+    sorter: (a, b) => a.id - b.id,
+  },
+  {
+    title: "name",
+    dataIndex: "name",
+    key: "name",
+    sorter: (a, b) => a.name - b.name,
+  },
+  {
+    title: "lastname",
+    dataIndex: "lastname",
+    key: "lastname",
+    sorter: (a, b) => a.lastname - b.lastname,
+  },
+  {
+    title: "email",
+    dataIndex: "email",
+    key: "email",
+    sorter: (a, b) => a.email - b.email,
+  },
+  {
+    title: "createdAt",
+    dataIndex: "createdAt",
+    key: "createdAt",
+    sorter: (a, b) => a.createdAt - b.createdAt,
+  },
 ];
