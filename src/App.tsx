@@ -9,8 +9,7 @@ return(
     <div className="conteiner">
     <Routes>
       <Route path="/" element={<UserListPage/>}/>
-      <Route path="/users/:id" element={<UserPage/>}/>
-      <Route path="/users/new" element={<UserPage/>}/>
+      <Route path="/users" element={<UserPage/>}/>
     </Routes>
     </div>
   </BrowserRouter>
