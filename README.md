@@ -1,73 +1,106 @@
-# React + TypeScript + Vite
+User Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Веб-приложение для управления списком пользователей, реализованное в рамках тестового задания на позицию Frontend Developer.
 
-Currently, two official plugins are available:
+Приложение позволяет просматривать список пользователей, переходить на страницу конкретного пользователя, а также редактировать и удалять данные пользователя.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Стек технологий
 
-## React Compiler
+React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+TypeScript
 
-## Expanding the ESLint configuration
+React Router v6
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Ant Design
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+LESS
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Feature-Sliced Design (FSD)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+REST API
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Vite
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+📌 Функциональность
+Основной функционал (по ТЗ)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Загрузка списка пользователей из API
+
+Отображение пользователей в виде таблицы
+
+Таблица содержит следующие поля:
+
+ID
+
+Имя
+
+Фамилия
+
+Email
+
+Навыки
+
+Дата регистрации
+
+Навигация между страницами с помощью React Router
+
+Просмотр данных конкретного пользователя
+
+Редактирование пользователя (PUT)
+
+Удаление пользователя (DELETE)
+
+Дополнительно
+
+Архитектура проекта построена по принципам Feature-Sliced Design
+
+Типизация данных с помощью TypeScript
+
+UI реализован с использованием Ant Design
+
+Стили написаны на LESS
+
+Асинхронная работа с API вынесена в сервисы
+
+🧱 Архитектура проекта (FSD)
+src/
+├── app/                # Инициализация приложения, роутинг
+├── pages/              # Страницы приложения (UserListPage, UserPage)
+├── entities/           # Бизнес-сущности (User)
+├── features/           # Фичи (редактирование, удаление)
+├── shared/
+│   ├── api/            # Работа с API
+│   ├── ui/             # Переиспользуемые UI-компоненты
+│   └── types/          # Общие типы
+
+🔀 Роутинг
+Маршрут	Описание
+/users	Страница со списком пользователей
+/users/:id	Страница пользователя
+/users/:id/edit	Редактирование пользователя
+📡 Работа с API
+
+Получение списка пользователей — GET
+
+Получение пользователя по ID — GET
+
+Редактирование пользователя — PUT
+
+Удаление пользователя — DELETE
+
+Вся работа с сервером вынесена в отдельный слой service / api, что упрощает поддержку и масштабирование.
+
+🛠 Установка и запуск проекта
+1. Клонировать репозиторий
+git clone https://github.com/username/user-management-app.git
+
+2. Установить зависимости
+npm install
+
+3. Запустить проект
+npm run dev
+
+
+Проект будет доступен по адресу:
+👉 http://localhost:5173
